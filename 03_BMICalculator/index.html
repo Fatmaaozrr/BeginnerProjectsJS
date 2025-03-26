@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        
+        <div style="background-color: white;border-radius: 10px;box-shadow: 15px 15px 5px #373980;margin-bottom: 10%;">
+            <span style="font-size: 30px;font-weight: bold;">BMI CALCULATOR</span>
+        </div>
+
+        <div class="container">
+            <span>Kilonuz :</span>
+            <input type="range" min="30" max="300" value="30" id="kilo" oninput="hesapla()">
+            <span id="kilo_value">30 KG</span>
+            <span>Boyunuz :</span>
+            <input type="range" min="30" max="300" value="30" id="boy" oninput="hesapla()">
+            <span id="boy_value">50 CM</span>
+
+            <div class="row2">
+                <span id="index">20.0</span>
+            </div>
+            <p id="metin">Normal</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
